@@ -1,0 +1,49 @@
+.login__content {
+    padding: 1rem;
+    background: #222629;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+    overflow-y: auto;
+}
+
+.login__input {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    color: #ffff;
+    background: none;
+    border: 2px solid #474A4F;
+}
+
+.login__btn {
+    cursor: pointer;
+    padding: 1rem;
+    background-color: #87C232;
+}
+
+.login__helps {
+    display: flex;
+    flex-direction: column;
+}
+
+.bolcks {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+
+.login__register {
+    display: flex;
+}
+
+.login__btn-register {
+    cursor: pointer;
+    padding: 1rem;
+    background-color: #474A4F;
+}
+
+@media screen and (min-width: 700px) {
+    .login__content {
+        width: 300px;
+    }
+}

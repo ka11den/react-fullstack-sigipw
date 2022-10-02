@@ -1,0 +1,45 @@
+.nav__item {
+    margin-right: 2rem;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    color: #474A4F;
+    font-weight: 500;
+}
+
+.nav-menu {
+    display: flex;
+    padding: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    flex: 0.98;
+}
+
+input {
+    color: #474A4F;
+}
+
+.search__input {
+    border: none;
+    background: none;
+    font-weight: 500;
+    color: #474A4F;
+}
+
+.nav__search {
+    position: relative;
+    align-items: center;
+    display: flex;
+    column-gap: 10px;
+}
+
+@media (max-width: 1000px) { 
+    .navbar {
+        display: none;
+    }
+}

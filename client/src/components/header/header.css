@@ -1,0 +1,287 @@
+.header__container {
+    max-width: 1700px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header__wrapper {  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__right {
+    flex: 1;
+    text-align: center;
+}
+
+.header__profile {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.header__span {
+    padding: 35px;
+}
+
+.header__cart {
+    position: relative;
+}
+
+.cart__count {
+    background-color: #87C232;
+    padding: 0.1rem 0.4rem;
+    border-radius: 500px;
+    color: #222629;
+    border: 4px solid #222629;
+    text-align: center;
+    position: absolute;
+    right: 13px;
+    bottom: -4px;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 920px) {
+    .header__wrapper {
+        position: absolute;
+        top: 20px;
+        width: 50vw;
+        right: 0;
+        transition: .5s;
+
+        padding: 2rem;
+        border-radius: 15px;
+        background-color: #c2bfd1;
+        transition: .5s;
+    }
+}
+
+/* HEADER */
+
+.menu-icon__active {
+    display: none;
+}
+
+.nav {
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    flex: 1 1;
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+    padding-top: 0;
+}
+
+.nav__list{
+    display: flex;
+    padding-top: 0;
+}
+
+.nav__item{
+    margin-right: 5rem;
+    margin-bottom: 0;
+}
+  
+.l-header {
+    display: flex;
+    z-index: 100;
+}
+
+.header__logo {
+    font-weight: 600;
+}
+
+.menu-icon {
+    position: relative;
+    z-index: 100;
+    display: none;
+    opacity: 0;
+}
+
+.nav__profile {
+    display: flex;
+    align-items: center;
+}
+
+.header__cart {
+    margin-right: 1rem;
+    position: relative;
+}
+
+.cart__count {
+    background-color: #87C232;
+    padding: 0.1rem 0.4rem;
+    border-radius: 500px;
+    color: #222629;
+    border: 4px solid #222629;
+    text-align: center;
+    position: absolute;
+    right: 13px;
+    bottom: -4px;
+    font-weight: 500;
+    user-select: none;
+}
+
+.menu-icon-active {
+    z-index: 50000;
+    position: absolute;
+    right: 35px;
+    top: 40px;
+    transition: .4s;
+}    
+
+.header__cart-mobile {
+    display: none;
+}
+
+.nav__link-active {
+    color: #87C232;
+    transition: 0.4ms;
+}
+
+@media screen and (max-width: 1000px) {
+    .nav__menu {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        right: 0;
+        padding: 2rem;
+        background-color: #1a1a1a;
+        opacity: 0.99;
+        transition: .4s;
+        z-index: 1000;
+    }
+    .nav__link-top {
+        margin-top: 1rem;
+    }
+    .nav__logo {
+        width: 100%;
+    }
+    .nav__link {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .nav__list {
+        display: block;
+    }
+    .nav__item {
+        margin-left: 0;
+        margin-bottom: 1rem;
+    }
+    .menu-icon {
+        position: absolute;
+        display: block;
+        opacity: 1;
+    }
+    .nav__profile {
+        display: flex;
+        position: absolute;
+        top: -5px;
+    }
+    .header__cart-mobile {
+        position: relative;
+        display: block;
+    }
+    .nav__item {
+        margin-right: 2rem;
+    }
+    .header__logo {
+        text-align: center;
+    }
+    .nav__profile {
+        display: none;
+    }
+}
+  
+.nav__link {
+    cursor: pointer;
+    font-weight: 600;
+    position: relative;
+}
+  
+.nav__link:hover {
+    color: #87C232;
+    transition: 0.4ms;
+}
+
+.nav__link:hover:after {
+    display: block;
+    opacity: 1;
+    transition: all .3s linear;
+}
+
+.dropdown__link {
+    cursor: pointer;
+    font-weight: 600;
+    position: relative;
+    color: #3F217E;
+}
+  
+.dropdown__link:hover {
+    color: #ccc5c5;
+}
+
+.dropdown__link:hover:after {
+    display: block;
+    opacity: 1;
+    transition: all .3s linear;
+}
+
+.nav__toggle {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.nav__item:hover .drop__nav {
+    opacity: 1;
+    z-index: 1;
+    margin-top: 2px;
+    transition: all 0.1s;
+}
+
+.nav__item:hover {
+    opacity: 1;
+    z-index: 1;
+    margin-top: 0px;
+    transition: all 0.1s;
+}
+
+.dropdown {
+    opacity: 0;
+    display: none;
+}
+
+.dropdown__active {
+    opacity: 1;
+    display: block;
+    position: fixed;
+    padding: 1rem;
+    border-radius: 15px;
+    background-color: #c2bfd1;
+    transition: .5s;
+    width: auto;
+    z-index: 1000;
+}
+
+.nav__profile-mobile {
+    margin-top: 1rem;
+    padding: 1rem;
+    display: flex;
+    background: #000000;
+    opacity: 0.2;
+}
+
+.profile__link {
+    float: left;
+    flex: 1 1;
+}
+
+
+
+

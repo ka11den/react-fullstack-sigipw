@@ -1,0 +1,45 @@
+.login__btn {
+    text-align: center;
+}
+
+.changeAddress__card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    width: auto;
+    border: 2px dashed #618930;
+}
+
+.chageAddress__content {
+    padding: 1rem;
+    background-color: #1E2124;    
+    text-align: center;
+}
+
+.close__modal-content-chageAddress {
+    cursor: pointer;
+    position: absolute;
+    left: 209px;
+    top: -38px;
+}
+
+@media screen and (min-width: 737px) {
+    .changeAddress__container {
+        display: grid;
+        margin: 10px;
+        grid-template-columns: repeat(3, auto);
+    }
+    .close__modal-content-chageAddress {
+        left: 409px;
+        top: -38px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .close__modal-content-chageAddress {
+        left: 159px;
+        top: -38px;
+    }
+}

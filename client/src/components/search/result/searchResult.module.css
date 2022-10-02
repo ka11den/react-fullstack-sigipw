@@ -1,0 +1,20 @@
+.Container {
+  position: absolute;
+  top: 30px;
+  right: -44px;
+  z-index: 5;
+  padding: 2px 15px;
+}
+
+.Backdrop {
+  z-index: 2;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.Title {
+  margin: 0 5px;
+}

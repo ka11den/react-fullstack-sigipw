@@ -1,0 +1,12 @@
+.verification__content {
+    padding: 1rem;    
+    background-color: #222629;
+}
+
+.verification__btn {
+    cursor: pointer;
+    padding: 1rem;
+    margin-left: 1rem;
+    gap: 5rem;
+    background-color: #474A4F;
+}

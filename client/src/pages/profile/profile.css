@@ -1,0 +1,302 @@
+.left {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.right {
+    flex-direction: column;
+    display: flex;
+    flex: 2;
+}
+
+.profile__panel {
+    float: left;
+    padding: 1.5rem;
+    width: 796px;
+    height: 270px;
+    background-color: #1E2124;
+}
+
+.profile__span-right {
+    color: #87C232;
+    margin-bottom: 3rem;
+}
+
+.container__profile {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+
+.profile__banner {
+    float: right;
+}
+
+.profile__container {
+    grid-template-columns: 2fr 2fr;
+    display: grid;
+}
+
+.profile__span {
+    margin-bottom: 3rem;
+}
+
+.profile__settings {
+    cursor: pointer;
+    color: #474A4F;
+    font-weight: 500;
+    margin-right: 6rem;
+}
+
+.col-vertical {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.col-horizontal {
+    display: flex;
+    float: right;
+}
+
+.col-right {
+    float: right;
+}
+
+.col-left {
+    float: left;
+}
+
+.profile__address {
+    padding: 1rem;
+    margin-bottom: 2rem;
+    width: auto;
+    border: 2px dashed #618930;
+}
+
+.profile__address-title {
+    margin-bottom: 2rem;
+    color: #87C232;
+}
+
+.profile__address-decription {
+    margin-bottom: 2rem;
+    color: #474A4F;
+    font-weight: 500;
+}
+
+.profile__address-add {
+    padding: 0rem;
+    width: auto;
+    margin-bottom: 1rem;
+    border: 2px dashed #474A4F
+}
+
+.profile__address-img {
+    position: absolute;
+    cursor: pointer;
+    width: 20px;
+    right: 20px;
+    top: 15px;
+    color: #87C232;
+}
+
+.profile__address-img img {
+    
+}
+
+.profile__img {
+    margin-right: 2rem;
+}
+
+.orders__item-nav {
+    display: flex;
+    padding: 0;
+}
+
+.history__orders-links {
+    margin-right: 5rem;
+}
+
+.profile__address-add-title {
+    cursor: pointer;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    color: #474A4F;
+    font-size: 2.8em;
+}
+
+.orders__content {
+    background-color: #262B2E;
+    padding: 1rem;
+}
+
+.orders__title {
+    margin-left: 1rem;
+}
+
+.orders__id {
+    display: flex;
+}
+
+.orders__right {
+    display: flex;
+}
+
+.orders__left {
+    float: left;
+    display: flex;
+    flex: 1 1;
+}
+
+@media (min-width: 1660px) { 
+    .profile__content {
+        width: 513px;
+    }
+}
+
+@media (max-width: 1000px) { 
+    .profile__panel {
+        width: auto;
+    }
+    .orders__item-nav {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1668px) { 
+    .profile__img {
+        height: 290px;
+      }
+}
+
+@media (max-width: 1600px) { 
+    .profile__img {
+        height: 250px;
+      }
+}
+
+@media (max-width: 1505px) { 
+    .profile__img {
+        height: 220px;
+      }
+}
+
+@media (max-width: 1470px) { 
+    .profile__img {
+        height: 200px;
+      }
+}
+
+@media (max-width: 1452px) { 
+    .profile__img {
+        height: 200px;
+    }
+    .profile__panel {
+        width: 668px;
+    }
+}
+
+@media (max-width: 1325px) { 
+    .profile__img {
+        height: 200px;
+    }
+    .profile__panel {
+        width: 577px;
+    }
+}
+
+@media (max-width: 1270px) { 
+    .col-left {
+        float: inherit;
+    }
+    .col-right {
+        float: initial;
+    }
+    .profile__panel {
+        width: auto;
+    }
+    .profile__address-content {
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+    .profile__banner {
+        margin: 0 auto;
+    }
+    .orders__item-nav {
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 597px) { 
+    .history__orders-links {
+        margin-right: 2rem;
+    }
+    .profile__settings {
+        margin-right: 1rem;
+    }
+}
+
+@media (max-width: 452px) { 
+    .orders__item-nav {
+        display: block;
+        padding: 0;
+    }    
+}
+
+@media (max-width: 388px) { 
+    .profile__panel {
+        width: auto;
+        height: auto;
+    }
+    .profile__container {
+        grid-template-columns: 1fr;
+        display: grid;
+    }
+    .center {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 340px) { 
+    .orders__id {
+        display: block;
+    }
+    .orders__left {
+        display: block;
+        flex: 00;
+    }
+    .orders__right {
+        display: block;
+    }
+}
+@media (max-width: 225px) { 
+    .profile__address-add {
+        width: auto;
+    }
+}
+
+
+/* @media (max-width: 1668px) { 
+    .profile__img {
+        height: 280px;
+    }
+    .profile__panel {
+        height: 230px;
+    }
+}
+
+@media (max-width: 1588px) { 
+    .profile__img {
+        height: 280px;
+    }
+    .profile__panel {
+        height: 230px;
+    }
+} */
+

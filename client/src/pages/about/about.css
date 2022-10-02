@@ -1,0 +1,46 @@
+.about__title {
+    color: #87C232;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.about__description {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.maps__data {
+    display: flex;
+    float: left;
+    margin-bottom: 3rem;
+}
+
+.maps__choose {
+    margin-right: 3rem;
+}
+
+.maps__right {
+    float: right;
+}
+
+.maps__img {
+    margin: 0 auto;
+    justify-content: center;
+    object-fit: cover;
+    width: 100%;
+}
+
+@media (max-width: 1000px) { 
+    .maps__img {
+        width: -webkit-fill-available;
+    }
+}
+
+@media (max-width: 455px) { 
+    .maps__data {
+        display: flex;
+        flex-direction: column;
+        float: left;
+        margin-bottom: 3rem;
+    }
+}
